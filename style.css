@@ -1,5 +1,5 @@
 /* Color Palette: black, #bad4ff, maroon, lightgrey, whitesmoke
-   Fonts: Anton, Audiowide, Helvetica */
+   Fonts: Anton, Audiowide, Exo 2, -- Helvetica */
 
 body {
   background-size:50%;
@@ -45,7 +45,6 @@ h1 {
   text-shadow: 0.5px 0.5px 2px #000;
   letter-spacing: 0.09em;
 }
-
 
 p {
   max-width: 625px;
@@ -99,9 +98,7 @@ img {
   h1 {
     font-size: 2em;
   }
-
 }
-
 
 /* hover date test */
 .hverbtn {
