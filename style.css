@@ -1,0 +1,60 @@
+body {
+  background-color: whitesmoke;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.9em;
+  max-width: 625px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* hover date test */
+.hverbtn {
+  background-color: #4CAF50;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+}
+.hover {
+    position: center;
+    display: inline-block;
+}
+.hover-content {
+    display: none;
+    position: left;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.hover-content h4, img, p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.hover-content a:hover {background-color: #f1f1f1}
+
+.hover:hover .hover-content {
+    display: block;
+}
+.hover:hover .hoverbtn {
+    background-color: #3e8e41;
+}
+
+/* Media Query Test */
+@media (max-width: 600px) {
+  p {
+    font-size: 0.5em;
+  }
+}
