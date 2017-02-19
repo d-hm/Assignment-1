@@ -3,7 +3,8 @@
 
 body {
   background-size:50%;
-  background: linear-gradient(whitesmoke, #bad4ff);
+  /*background: linear-gradient(whitesmoke, #bad4ff);*/
+  background: radial-gradient(circle, #bad4ff, whitesmoke);
   margin: auto;
   max-width: 80%;
   font-family: 'Exo 2', 'Helvetica', sans-serif;
