@@ -2,14 +2,77 @@
    Fonts: Anton, Audiowide, Exo 2, -- Helvetica */
 
 body {
+  background-size:50%;
+  /*background: linear-gradient(whitesmoke, #bad4ff);*/
   background: radial-gradient(circle, #bad4ff, whitesmoke);
+  margin: auto;
+  max-width: 80%;
   font-family: 'Exo 2', 'Helvetica', sans-serif;
   font-size: 0.9em;
+  box-sizing: border-box;
+  /*background-color: whitesmoke;*/
 }
 
-img {
-  max-width: 100%;
-  opacity: 0.8;
+.title {
+  padding: 10px;
+  text-align: center;
+  display: inline;
+  float: left;
+  background-image:url('af1_small.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.title h2, h3{
+  color: #bad4ff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.intro {
+  padding: 25px;
+  padding-top: 150px;
+  padding-left: 30%;
+  padding-right: 30%;
+  min-width: 300px;
+  max-width: 550px;
+  font-size: 1.2em;
+}
+
+h1 {
+  padding: 30px;
+  font-family: 'Anton', 'Helvetica', sans-serif;
+  font-size: 4em;
+  color: white;
+  text-shadow: 0.5px 0.5px 2px #000;
+  letter-spacing: 0.09em;
+}
+
+p {
+  max-width: 625px;
+}
+
+.flex-item {
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.flex-item h4, h5 {
+  padding: 25px;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Audiowide', 'Helvetica', sans-serif;
+  font-size: 3em;
+  padding-top: 25px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 2em;
+  max-width: 625px;
 }
 
 .flex-container {
@@ -18,107 +81,29 @@ img {
   justify-content: center;
 }
 
-.flex-item {
-  display: block;
-  max-width: 625px;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  opacity: 0.8;
+  background: black;
 }
 
-#title {
-  text-align: center;
-  background: url('af1_noshadow.gif');
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+#af1 {
+  max-width: 50%;
 }
 
-h1 {
-  color: black;
-  font-family: 'Anton', 'Helvetica', sans-serif;
-  font-size: 4em;
-  letter-spacing: 0.09em;
-  max-width: 625px;
-  padding-bottom: 60%;
-}
-
-h4, h5 {
-  padding: 10px;
-  text-align: center;
-}
-
-h4 {
-  font-family: 'Audiowide', 'Helvetica', sans-serif;
-  font-size: 3em;
-  padding: 15% 0 0 0;
-  /*padding-top: 25px;*/
-}
-
-h5 {
-  font-weight: bold;
-  font-size: 2em;
-}
-
-p {
-  max-width: 500px;
-  padding: 0 10% 0 10%;
-}
-
-#intro p {
-  font-size: 1.15em;
-}
-
-#ascender {
-  padding-left: 40%;
-  margin: auto;
-  padding-top: 20%;
-}
-
-/*Media Query */
+/* Media Query */
 @media (max-width: 600px) {
-  .flex-item {
-    display: block;
-    margin: 0 auto;
-
-  }
-
   p {
     font-size: 0.5em;
   }
 
-  #intro p {
-    font-size: .75em;
-  }
-
   h1 {
     font-size: 2em;
-    max-width: 300px;
-    margin: 0 auto;
   }
-
-  h2 {
-    font-size: 1em;
-  }
-
-  h3 {
-    font-size: 1em;
-  }
-
-  h4 {
-    font-family: 'Audiowide', 'Helvetica', sans-serif;
-    font-size: 2em;
-    padding: 15% 0 0 0;
-    /*padding-top: 25px;*/
-  }
-
-  h5 {
-    font-weight: bold;
-    font-size: 1em;
-  }
-
 }
 
 /* hover date test */
-/*.hverbtn {
+.hverbtn {
   background-color: #4CAF50;
    color: white;
    padding: 16px;
@@ -151,4 +136,4 @@ p {
 }
 .hover:hover .hoverbtn {
     background-color: #3e8e41;
-}*/
+}
